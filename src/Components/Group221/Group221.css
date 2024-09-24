@@ -1,0 +1,53 @@
+.group221{
+    display: flex;
+    z-index: 1;
+    position: relative;
+    /* margin: 0 auto; */
+    /* background-color: red;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0); */
+}
+.left, .right {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    background-color: #F2F5F9;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    width: 200px;
+    height: 45px;
+    color: #9EA7B8;
+  }
+  
+  .left::after, .right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: black transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  .left {
+    margin-right: 15px;
+  }
+  
+  .right {
+    margin-left: 15px;
+  }
+  .group221 .btn{
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding: 0;
+  }
+  /* From Uiverse.io by vinodjangid07 */ 

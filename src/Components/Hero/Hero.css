@@ -1,0 +1,75 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 690px;
+    padding-top: 40px;
+    margin: auto;
+}
+.hero h2{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 80.64px;
+    letter-spacing: -0.01em;
+    color: var(--color);
+    /* text-align: center; */
+}
+.hero h1{
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 80.64px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color);
+    margin-bottom: 25px;
+}
+.hero p{
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.68px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color);
+    margin-bottom: 25px;
+}
+.btn{
+    /* width: Hug (160px)px; */
+    /* height: Fixed (54px)px; */
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 22.68px;
+    width: 160px;
+    font-weight: 600;
+    border: none;
+    color: #fff;   
+    background: linear-gradient(var(--logo-color), #78AEFF ); 
+    margin: 0 auto;
+}
+.hero img{
+    z-index: 999;
+    width: 900px;
+    height: 500px;
+}
+.polygon1 img, .polygon2 img{
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+}
+.polygon1 img{
+    left: 0;
+    position: absolute;
+    bottom: -18.3rem;
+}
+.polygon2 img{
+    right: 0;
+    top: -6rem;
+    position: absolute;
+}
+ .polygon2{
+    position: absolute;
+    right: 0;
+}

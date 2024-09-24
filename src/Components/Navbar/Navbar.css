@@ -1,0 +1,57 @@
+:root{
+    --color: #242E49;
+    --logo-color: #225E94;
+}
+.logo img{
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.childNav{
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 50px 0;
+}
+.childNav li{
+    float: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 40px;
+    cursor: pointer;
+    color: #9EA7B8;
+    font-size: 18px;
+}
+.childNav li:nth-child(1),
+.childNav li:nth-child(2),
+.childNav li:nth-child(3){
+    float: left;
+    margin-left: 50px;
+}
+li:hover{
+    color: var(--color);
+    transition: 2s;
+    /* font-size: 17.7px; */
+}
+li::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    bottom: 15px; /* position the dot 15px from the bottom of the li element */
+    width: 8px;
+    height: 8px;
+    background-color: var(--logo-color);
+    transform: translateY(-10px);
+    transition: opacity 2s; /* add a 2s transition to the opacity property */
+    opacity: 0; /* hide the dot initially */
+  }
+  
+  li:hover::before {
+    opacity: 1; /* show the dot on hover */
+  }
+
